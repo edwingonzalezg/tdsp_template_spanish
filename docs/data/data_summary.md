@@ -9,13 +9,11 @@ En este archivo se pueden identificar diferentes columnas que continen informaci
 *   **`float64`** para identificar registros cuantificados como la duración de la parada del equipo, clasificacion, proceso de gestión o el tipo de falla.
 *   **`object`** para identificar todos los registros de texto como secuencia de caracteres (string) y corresponden a la gran mayoría de los datos del dataset. Tenemos ejemplos importantes como la descripción, el texto explicativo, la estación, el sistema, ubicción crticidad, etc.
 
-![image](https://user-images.githubusercontent.com/119147133/205521437-1d19199e-7617-46c3-a9bc-937340e24c17.png)
-
 Adiconalmente se cuenta con los datasets de los diccionarios y bolsas de palabras:
 
 *   **`BoW clasificación de avisos`** 
 *   **`Diccionario DA`**
-*   *   **`Diccionario TE`**
+*   **`Diccionario TE`**
 
 ## Resumen general de los datos
 
@@ -40,6 +38,22 @@ Adiconalmente se cuenta con los datasets de los diccionarios y bolsas de palabra
 
 
 ## Variable objetivo
+
+El objetivo de este proyecto es diseñar una solución basa en *Procesamento de Leguaje Natural* **(NPL)** donde el algoritmo ingrese a cada uno de los textos de los eventos registrados, busque algunas palabras clave y encuentre patrones para que finalemente realice una clasificación de la siguiente manera:
+
+![image](https://user-images.githubusercontent.com/119147133/205521661-d669ce31-588e-4e89-965e-967baafa19ab.png)
+
+El algoritmo debe ingresar y validar cada uno de los textos de cada aviso y clasificarlo de acuerdo a la imagen anterior:
+
+*   En la columna **`Clasificación`** debe colocar 0, 1, 2 o 3 para avisos pendientes, no aplican, condiciones o fallas.
+*   En la columna **`Proceso de Gestión`** debe colocar 0, 1, 2, 3, 4 o 5 para avisos pendientes, no aplican, mantenimientos por condición, avisos de inteligencia artificial, eliminación de defectos o eventos de seguridad de procesos respectivamente.
+*   En la columna **`Tipo de Falla/SP`** debe colocar 0 o 1 para avisos que estén pendientes o avisos que no apliquen.
+
+La clasificación debe realizar en el siguiente orden lógico para lograr obtener una clasificación correcta:
+
+![image](https://user-images.githubusercontent.com/119147133/205521667-4dda5a68-7549-43b9-9ec7-816d6a44f700.png)
+
+Adicionalmente intentaremos realizar una predicción para los avisos los cuales cuentan unicamente con la descrición básica y de esta manera realizar una predicción previa lo cual permitirá anticiparnos a los difernetes eventos que se puedan presentar.
 
 ## Variables individuales
 
