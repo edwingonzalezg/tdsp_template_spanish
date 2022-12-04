@@ -1,2 +1,2 @@
 # tdsp_template_spanish
-Template para proyectos
+Template base para proyectos
