@@ -78,8 +78,11 @@ Se cuenta con bastate información y dentro de este se tienen muchas variables, 
 Nuestro primer objetivo en el preprocesamiento será implementar una función para transformar el texto de los campos ***descripción del aviso*** y ***texto explicativo*** con su respectivo diccionario asociado. Para esto será necesario crear una expresión regurar que reemplazará los tags, dejando solamente letras y elimina palabras como ***'de', 'la', 'el', 'a'.***  
 
 ![image](https://user-images.githubusercontent.com/119147133/205523409-6a94d3d8-0f27-4a6d-9ce2-03004e565d22.png)
+
 ![image](https://user-images.githubusercontent.com/119147133/205523431-2343a1fe-3a35-4aae-84e5-aa1122f0f641.png)
+
 ![image](https://user-images.githubusercontent.com/119147133/205523450-c3e75d88-2f48-4fe7-8fd1-3726dfdfcc55.png)
+
 ![image](https://user-images.githubusercontent.com/119147133/205523467-4e0d906c-4032-4ca3-b065-9c7d3a2f85c7.png)
 
 Luego agregaremos dos nuevas columnas con los campos 'Descripción' y 'Texto explicativo' preprocesados.
@@ -107,8 +110,3 @@ Obteniendo:
 ![image](https://user-images.githubusercontent.com/119147133/205522870-28159c6c-d2c8-4ef0-8e5b-9ea4696d262d.png)
 
 ![image](https://user-images.githubusercontent.com/119147133/205522880-78a2cc84-3f68-49b1-a5fa-c302af5d57f8.png)
-
-
-
-
-
