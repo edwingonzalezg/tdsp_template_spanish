@@ -15,27 +15,43 @@ Adiconalmente se cuenta con los datasets de los diccionarios y bolsas de palabra
 *   **`Diccionario DA`**
 *   **`Diccionario TE`**
 
-## Resumen general de los datos
+Los cuales se describiran a continuación.
+
+## Resumen general de los datos 
 
 *   **`qFallas`** archivo con la data extraída de SAP que contiene todos los registros.
+
+Este archivo cuenta con 60 variables tipo **`datetime64[ns]`**, **`int64`**, **`float64`** y **`object`**
 
 ![image](https://user-images.githubusercontent.com/119147133/205520784-0739fce8-6364-4577-8043-983807ae45d4.png)
 
 *   **`BoW clasificación de avisos`** archivo que contiene una bolsa de palabras específicas de ingeniería depetróleos.
 
+Este archivo cuenta con 4 variables tipo **`object`** y 180 registros
+
 ![image](https://user-images.githubusercontent.com/119147133/205521213-7325a928-1822-418a-a9e1-e51daa9e3a44.png)
 
 *   **`Diccionario DA`** archivo que contiene un diccionario para realizar la corrección de palabras en la columna *descrición del aviso*. 
+
+Este archivo cuenta con una variables tipo **`object`** y 5.537 registros
 
 ![image](https://user-images.githubusercontent.com/119147133/205521238-c70da6b2-e070-4222-87ed-a40028f55f0e.png)
 
 *   **`Diccionario TE`** archivo que contiene un diccionario para realizar la corrección de palabras en la columna *texto explicativo*. 
 
+Este archivo cuenta con una variables tipo **`object`** y 248 registros
+
 ![image](https://user-images.githubusercontent.com/119147133/205521255-19c941eb-2695-4f2a-a900-402515521c88.png)
 
 ## Resumen de la calidad de los datos
 
+La calidad de los datos es deficiente por este motivo debemos realizar el preprocesamiento de la información para que de este manera sepueda implementar un clasificador de variables, lo cual se mostrará más adelante. A continuación algunas estadisticas de las principales variables:
 
+![image](https://user-images.githubusercontent.com/119147133/205522734-04c44523-2c0b-4a1d-8f52-79e065be1ec6.png)
+
+![image](https://user-images.githubusercontent.com/119147133/205522749-27c862b0-3b90-497e-bd9b-ba4f2dcc4240.png)
+
+![image](https://user-images.githubusercontent.com/119147133/205522753-1f07a3ae-f890-44a0-a707-56f6b9ec8e5b.png)
 
 ## Variable objetivo
 
@@ -57,8 +73,42 @@ Adicionalmente intentaremos realizar una predicción para los avisos los cuales 
 
 ## Variables individuales
 
+Se cuenta con bastate información y dentro de este se tienen muchas variables, sin embargo nos interesan solamente 2 variables ***descripción del aviso*** y  ***texto explicativo***.
+
+Nuestro primer objetivo en el preprocesamiento será implementar una función para transformar el texto de los campos ***descripción del aviso*** y ***texto explicativo*** con su respectivo diccionario asociado. Para esto será necesario crear una expresión regurar que reemplazará los tags, dejando solamente letras y elimina palabras como ***'de', 'la', 'el', 'a'.***  
+
+![image](https://user-images.githubusercontent.com/119147133/205523409-6a94d3d8-0f27-4a6d-9ce2-03004e565d22.png)
+![image](https://user-images.githubusercontent.com/119147133/205523431-2343a1fe-3a35-4aae-84e5-aa1122f0f641.png)
+![image](https://user-images.githubusercontent.com/119147133/205523450-c3e75d88-2f48-4fe7-8fd1-3726dfdfcc55.png)
+![image](https://user-images.githubusercontent.com/119147133/205523467-4e0d906c-4032-4ca3-b065-9c7d3a2f85c7.png)
+
+Luego agregaremos dos nuevas columnas con los campos 'Descripción' y 'Texto explicativo' preprocesados.
+
+![image](https://user-images.githubusercontent.com/119147133/205523503-afe4f2f7-e8b5-4d0d-8356-15d671c5ddf3.png)
+
+Obteniendo:
+
+![image](https://user-images.githubusercontent.com/119147133/205523516-9597e0e6-bc4e-464b-b25e-a3925ab27964.png) ![image](https://user-images.githubusercontent.com/119147133/205523528-9b0bf08a-b37e-42c4-8b5a-3315f0988460.png)
+
 ## Clasificación de las variables
 
+
+
 ## Relación entre las variables explicativas y la variable objetivo
+
+![image](https://user-images.githubusercontent.com/119147133/205522757-1adc91df-b7c7-430a-ada9-d344bc546abb.png)
+
+![image](https://user-images.githubusercontent.com/119147133/205522820-1fc82d19-cb16-4178-be46-650f1e2ed6d0.png)
+
+![image](https://user-images.githubusercontent.com/119147133/205522833-f337a1fa-0310-441d-a06e-299b995c3f26.png)
+
+![image](https://user-images.githubusercontent.com/119147133/205522855-ad3d56a1-9dff-45b2-9db7-99093cfbc498.png)
+
+![image](https://user-images.githubusercontent.com/119147133/205522870-28159c6c-d2c8-4ef0-8e5b-9ea4696d262d.png)
+
+![image](https://user-images.githubusercontent.com/119147133/205522880-78a2cc84-3f68-49b1-a5fa-c302af5d57f8.png)
+
+
+
 
 
