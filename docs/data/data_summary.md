@@ -9,9 +9,15 @@ En este archivo se pueden identificar diferentes columnas que continen informaci
 *   **`float64`** para identificar registros cuantificados como la duración de la parada del equipo, clasificacion, proceso de gestión o el tipo de falla.
 *   **`object`** para identificar todos los registros de texto como secuencia de caracteres (string) y corresponden a la gran mayoría de los datos del dataset. Tenemos ejemplos importantes como la descripción, el texto explicativo, la estación, el sistema, ubicción crticidad, etc.
 
+![image](https://user-images.githubusercontent.com/119147133/205520784-0739fce8-6364-4577-8043-983807ae45d4.png)
+
 ## Resumen general de los datos
 
+
+
 ## Resumen de la calidad de los datos
+
+
 
 ## Variable objetivo
 
