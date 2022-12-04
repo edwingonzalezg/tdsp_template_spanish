@@ -93,10 +93,6 @@ Obteniendo:
 
 ![image](https://user-images.githubusercontent.com/119147133/205523516-9597e0e6-bc4e-464b-b25e-a3925ab27964.png) ![image](https://user-images.githubusercontent.com/119147133/205523528-9b0bf08a-b37e-42c4-8b5a-3315f0988460.png)
 
-## Clasificación de las variables
-
-
-
 ## Relación entre las variables explicativas y la variable objetivo
 
 ![image](https://user-images.githubusercontent.com/119147133/205522757-1adc91df-b7c7-430a-ada9-d344bc546abb.png)
