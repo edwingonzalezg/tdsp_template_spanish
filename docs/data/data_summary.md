@@ -71,7 +71,7 @@ La clasificación debe realizar en el siguiente orden lógico para lograr obtene
 
 Adicionalmente intentaremos realizar una predicción para los avisos los cuales cuentan unicamente con la descrición básica y de esta manera realizar una predicción previa lo cual permitirá anticiparnos a los difernetes eventos que se puedan presentar.
 
-## Variables individuales
+## Variables individuales y clasificación
 
 Se cuenta con bastate información y dentro de este se tienen muchas variables, sin embargo nos interesan solamente 2 variables ***descripción del aviso*** y  ***texto explicativo***.
 
@@ -95,14 +95,22 @@ Obteniendo:
 
 ## Relación entre las variables explicativas y la variable objetivo
 
+Una de las palabras objetivo es ***falla*** la cual nos indica si un texto corresponde a una falla o no; dicha información es vital para llevar los registros de la empresa de manera adecuada y poder tomar decisiones acertivas sobrelos equipos que presenten fallas. 
+
+A continuación podemos observar la relación de la palbra **falla** en el conteo de caracteres, en el conteo de plabras y en el conteo de oraciones:
+
 ![image](https://user-images.githubusercontent.com/119147133/205522757-1adc91df-b7c7-430a-ada9-d344bc546abb.png)
 
 ![image](https://user-images.githubusercontent.com/119147133/205522820-1fc82d19-cb16-4178-be46-650f1e2ed6d0.png)
 
+Para los registreos que indican las fallas podemos ver que efectivamente esta palabra es la que más veces se repite.
+
+![image](https://user-images.githubusercontent.com/119147133/205522880-78a2cc84-3f68-49b1-a5fa-c302af5d57f8.png)
+
 ![image](https://user-images.githubusercontent.com/119147133/205522833-f337a1fa-0310-441d-a06e-299b995c3f26.png)
 
-![image](https://user-images.githubusercontent.com/119147133/205522855-ad3d56a1-9dff-45b2-9db7-99093cfbc498.png)
+Sin mebargo, 
 
 ![image](https://user-images.githubusercontent.com/119147133/205522870-28159c6c-d2c8-4ef0-8e5b-9ea4696d262d.png)
 
-![image](https://user-images.githubusercontent.com/119147133/205522880-78a2cc84-3f68-49b1-a5fa-c302af5d57f8.png)
+![image](https://user-images.githubusercontent.com/119147133/205522855-ad3d56a1-9dff-45b2-9db7-99093cfbc498.png)
