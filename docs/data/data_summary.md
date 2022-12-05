@@ -103,13 +103,13 @@ A continuación podemos observar la relación de la palbra **falla** en el conte
 
 ![image](https://user-images.githubusercontent.com/119147133/205522820-1fc82d19-cb16-4178-be46-650f1e2ed6d0.png)
 
-Para los registros que indican las fallas podemos ver que efectivamente las palabras **falla**, **fallar** y **fuga** (que es tambén una falla) son las que más veces se repiten, lo cual nos indica que existe una fuerte relación de los textos con la variable objetivo.
+Para los registros que indican las fallas podemos ver que efectivamente las palabras **falla**, **fallar** y **fuga** (que es también una falla) son las que más veces se repiten, lo cual nos indica que existe una fuerte relación de los textos con la variable objetivo.
 
 ![image](https://user-images.githubusercontent.com/119147133/205522870-28159c6c-d2c8-4ef0-8e5b-9ea4696d262d.png)
 
 ![image](https://user-images.githubusercontent.com/119147133/205522833-f337a1fa-0310-441d-a06e-299b995c3f26.png)
 
-Por otro lado, los registros que indican condiciones, es decir, "NO FALLAS" 
+Por otro lado, los registros que indican condiciones, es decir, "NO FALLAS" también tienen las mismas palabras con mayor número de repeticviones (a excepción de **CBM**) lo cual representa un verdadero desafío para poder realizar la calsificación de manera adecuada.
 
 ![image](https://user-images.githubusercontent.com/119147133/205522880-78a2cc84-3f68-49b1-a5fa-c302af5d57f8.png)
 
